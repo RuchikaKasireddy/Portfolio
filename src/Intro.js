@@ -63,7 +63,7 @@ function Intro() {
   }
 
   return (
-    <div className="container">
+    <div>
       <canvas
         className="canvas"
         ref={canvasRef}
@@ -75,44 +75,26 @@ function Intro() {
         <div className="profilepicture">
           <div className="profilepictureimg" />
         </div>
-        <div className="introtext">
+        <div>
           <div className="introheader">
             <p>Hi,</p>
             <p>I'm Aman,</p>
             <p>Full Stack Developer</p>
           </div>
-          <p>
-            Welcome to my portfolio website! I'm a full stack developer with a
-            passion for creating amazing applications. I have gained 2 years
-            of experience in a range of technologies including
-            <span className="highlight"> Python, Java, Golang, Node.js </span>
-            and
-            <span className="highlight"> Express.js </span>for
-            backend development, and
-            <span className="highlight"> React, React Native, Angular.js, HTML/CSS
-            </span> and<span className="highlight"> Javascript </span>
-            for front-end development.
-          </p>
-          <p>
-            I'm currently pursuing a Masters degree in Computer Science
-            at the University of Southern California, and I'm
-            expected to graduate in May 2023. This degree has allowed me to deepen
-            my understanding of computer science concepts, and I'm excited to apply
-            this knowledge to my future projects.
-          </p>
-          <p>
-            This website has been built using React, which is one of my favorite
-            technologies to work with. I have had the opportunity to work on a
-            variety of projects, from developing web-based applications to building
-            native mobile applications. With each project, I strive to provide the
-            best solution possible for the end user.
-          </p>
-          <p>
-            On this website, you will find examples of my work, my resume, and
-            my contact information. Please feel free to reach out to me if you
-            have any questions or want to discuss how we can work together to
-            create something amazing. Thank you for stopping by!
-          </p>
+          <div className="introtext">
+            <p>
+              Welcome to my portfolio website! I'm a full stack developer with a
+              passion for creating amazing applications. I have gained 2 years
+              of experience in a range of technologies including
+              <span className="highlight"> Python, Java, Golang, Node.js </span>
+              and
+              <span className="highlight"> Express.js </span>for
+              backend development, and
+              <span className="highlight"> React, React Native, Angular.js, HTML/CSS
+              </span> and<span className="highlight"> Javascript </span>
+              for front-end development.
+            </p>
+          </div>
         </div>
       </div>
     </div>
