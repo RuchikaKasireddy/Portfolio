@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const MAX_DOTS = 500;
-const DOT_SIZE = 10;
-const DELETE_INTERVAL = 1;
+const MAX_DOTS = 100;
+const DOT_SIZE = 5;
+const DELETE_INTERVAL = 12;
 
 function Intro() {
   const [dots, setDots] = useState([]);
@@ -24,15 +24,14 @@ function Intro() {
         }
 
         ctx.lineWidth = DOT_SIZE;
-        ctx.strokeStyle = "#ff048b";
-        ctx.globalAlpha = 0.1
+        ctx.strokeStyle = "#fd2155";
         ctx.stroke();
       }
 
       dots.forEach((dot, index) => {
         ctx.beginPath();
         ctx.arc(dot.x, dot.y, DOT_SIZE / 2, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 4, 140, ${1 - index / MAX_DOTS})`;
+        ctx.fillStyle = `rgba(253, 33, 85, ${1 - index / MAX_DOTS})`;
         ctx.fill();
       });
     }
@@ -63,7 +62,7 @@ function Intro() {
   }
 
   return (
-    <div>
+    <div id="intro">
       <canvas
         className="canvas"
         ref={canvasRef}
@@ -78,14 +77,13 @@ function Intro() {
         <div>
           <div className="introheader">
             <p>Hi,</p>
-            <p>I'm Aman,</p>
+            <p>I'm <span className="shadowhighlight">A</span>man,</p>
             <p>Full Stack Developer</p>
           </div>
           <div className="introtext">
             <p>
               Welcome to my portfolio website! I'm a full stack developer with a
-              passion for creating amazing applications. I have gained 2 years
-              of experience in a range of technologies including
+              passion for creating amazing applications. I'm proficient in a range of technologies including
               <span className="highlight"> Python, Java, Golang, Node.js </span>
               and
               <span className="highlight"> Express.js </span>for
