@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #000;
+  scroll-behavior: smooth;
 }
 
 .canvas {
@@ -107,6 +108,10 @@ html, body {
   list-style: none;
 }
 
+#introduction, #about {
+  height: 100vh;
+}
+
 @media only screen and (max-width: 400px) {
   .profilepicture {
     width: 50%;
@@ -123,6 +128,10 @@ html, body {
 
   .introheader {
     padding-top: 70%;
+  }
+
+  .aboutheader {
+    padding-top: 20%;
   }
 
   .introheader, .aboutheader {
@@ -176,6 +185,10 @@ html, body {
     padding-top: 70%;
   }
 
+  .aboutheader {
+    padding-top: 20%;
+  }
+
   .introheader, .aboutheader {
     padding-left: 10%;
     padding-right: 10%;
@@ -219,18 +232,22 @@ html, body {
 
   .introtext, .abouttext {
     font-size: 1.5em;
-    padding: 5%;
-    padding-top: 1%;
+    padding-left: 7%;
+    padding-right: 5%;
   }
 
   .introheader {
     padding-top: 60%;
   }
 
+  .aboutheader {
+    padding-top: 5%;
+  }
+
   .introheader, .aboutheader {
-    padding-left: 5%;
+    padding-left: 7%;
     padding-right: 5%;
-    font-size: 3em;
+    font-size: 2.5em;
     padding-bottom: 5%;
     line-height: 0.1em;
   }
@@ -270,19 +287,22 @@ html, body {
 
   .introtext, .abouttext {
     font-size: 1.5em;
-    padding: 5%;
-    padding-top: 1%;
+    padding-left: 7%;
+    padding-right: 5%;
   }
 
   .introheader {
     padding-top: 40%;
   }
 
+  .aboutheader {
+    padding-top: 5%;
+  }
+
   .introheader, .aboutheader {
-    padding-left: 5%;
+    padding-left: 7%;
     padding-right: 5%;
     font-size: 3.5em;
-    padding-bottom: 5%;
     line-height: 0.1em;
   }
   
@@ -327,6 +347,10 @@ html, body {
 
   .introheader {
     padding-top: 20%;
+  }
+
+  .aboutheader {
+    padding-top: 5%;
   }
 
   .introheader, .aboutheader {

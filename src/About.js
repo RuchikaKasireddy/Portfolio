@@ -15,7 +15,7 @@ function About() {
           this knowledge to my future projects.
         </p>
         <p>
-          This website has been built using React, which is one of my favorite
+          This website has been built using<span className="highlight"> React.js, </span> which is one of my favorite
           technologies to work with. I have had the opportunity to work on a
           variety of projects, from developing web-based applications to building
           native mobile applications. With each project, I strive to provide the
