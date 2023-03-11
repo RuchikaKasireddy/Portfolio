@@ -1,8 +1,14 @@
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
+
 html, body {
   height: 100%;
   width: 100%;
   background-color: #000;
   scroll-behavior: smooth;
+  font-family: serif;
+  text-align: justify;
 }
 
 .canvas {
@@ -109,7 +115,7 @@ html, body {
 }
 
 #introduction, #about {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media only screen and (max-width: 400px) {
@@ -122,6 +128,11 @@ html, body {
 
   .introtext, .abouttext {
     font-size: 1em;
+    padding: 10%;
+    padding-top: 1%;
+  }
+
+  .tagcloud {
     padding: 10%;
     padding-top: 1%;
   }
@@ -181,6 +192,11 @@ html, body {
     padding-top: 1%;
   }
 
+  .tagcloud {
+    padding: 10%;
+    padding-top: 0;
+  }
+
   .introheader {
     padding-top: 70%;
   }
@@ -233,6 +249,12 @@ html, body {
   .introtext, .abouttext {
     font-size: 1.5em;
     padding-left: 7%;
+    padding-right: 5%;
+  }
+
+  .tagcloud {
+    padding-top: 2%;
+    padding-left:  7%;
     padding-right: 5%;
   }
 
@@ -291,6 +313,12 @@ html, body {
     padding-right: 5%;
   }
 
+  .tagcloud {
+    padding-left:  7%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+
   .introheader {
     padding-top: 40%;
   }
@@ -343,6 +371,12 @@ html, body {
     font-size: 1.5em;
     padding-left: 5%;
     padding-right: 10%;
+  }
+
+  .tagcloud {
+    padding-left:  5%;
+    padding-right: 10%;
+    padding-top: 5%;
   }
 
   .introheader {

@@ -1,4 +1,50 @@
 import React from 'react';
+import { TagCloud } from 'react-tagcloud';
+import { shuffle } from 'lodash';
+
+const beginner = 1;
+const intermediate = 2;
+const advanced = 3;
+
+const skilltags = [
+  { value: 'Python', count: advanced },
+  { value: 'Java', count: intermediate },
+  { value: 'Golang', count: beginner },
+  { value: 'React', count: advanced },
+  { value: 'React Native', count: advanced },
+  { value: 'Angular.js', count: advanced },
+  { value: 'Node.js', count: advanced },
+  { value: 'HTML', count: advanced },
+  { value: 'CSS', count: advanced },
+  { value: 'JavaScript', count: advanced },
+  { value: 'MySQL', count: advanced },
+  { value: 'PostgreSQL', count: intermediate },
+  { value: 'MongoDB', count: beginner },
+  { value: 'DynamoDB', count: beginner },
+  { value: 'AWS Lambda', count: intermediate },
+  { value: 'Google Cloud Functions', count: intermediate }
+];
+
+const shuffledTags = shuffle(skilltags);
+
+const customRenderer = (tag, size, color) => {
+  return (
+    <span
+      key={tag.value}
+      style={{
+        animation: 'blinker 3s linear infinite',
+        animationDelay: `${Math.random() * 2}s`,
+        fontSize: `${size / 2}em`,
+        margin: '0 auto',
+        padding: '3px',
+        display: 'inline-block',
+        color: `${color}`
+      }}
+    >
+      {tag.value}
+    </span>
+  )
+}
 
 function About() {
   return (
@@ -28,6 +74,13 @@ function About() {
           create something amazing. Thank you for stopping by!
         </p>
       </div>
+      <TagCloud
+        className="tagcloud"
+        tags={shuffledTags}
+        minSize={1}
+        maxSize={5}
+        renderer={customRenderer}
+      />
     </div>
   )
 }
