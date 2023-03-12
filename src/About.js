@@ -32,13 +32,14 @@ const customRenderer = (tag, size, color) => {
     <span
       key={tag.value}
       style={{
-        animation: 'blinker 3s linear infinite',
+        animation: 'blinker 5s linear infinite',
         animationDelay: `${Math.random() * 2}s`,
+        border: `2px solid ${color}`,
         fontSize: `${size / 2}em`,
         margin: '0 auto',
         padding: '3px',
         display: 'inline-block',
-        color: `${color}`
+        color: 'white'
       }}
     >
       {tag.value}
