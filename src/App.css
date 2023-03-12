@@ -25,6 +25,20 @@ html, body {
   pointer-events: none;
 }
 
+.introtext {
+  position: relative;
+}
+
+.introtext::before {
+  background-image: url('../images/code.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  background-color: black;
+  opacity: 0.2;
+}
+
 .introtext, .abouttext {
   color: #49c5b6;
 }
@@ -123,7 +137,15 @@ html, body {
     width: 50%;
     height: 30%;
     left: 25%;
-    top: 10%;
+    top: 5%;
+  }
+
+  .introtext::before {
+    padding: 10%;
+    top: 80%;
+    left: 0;
+    width: 80%;
+    height: 100%;
   }
 
   .introtext, .abouttext {
@@ -183,13 +205,20 @@ html, body {
     width: 250px;
     height: 250px;
     left: 25%;
-    top: 10%;
+    top: 5%;
   }
 
   .introtext, .abouttext {
     font-size: 1em;
     padding: 10%;
     padding-top: 1%;
+  }
+
+  .introtext::before {
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 80%;
   }
 
   .tagcloud {
@@ -243,13 +272,24 @@ html, body {
     width: 300px;
     height: 300px;
     right: 5%;
-    top: 10%;
+    top: 5%;
   }
 
   .introtext, .abouttext {
     font-size: 1.5em;
     padding-left: 7%;
     padding-right: 5%;
+  }
+
+  .introtext {
+    height: 50vh;
+  }
+
+  .introtext::before {
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 50%;
   }
 
   .tagcloud {
@@ -259,7 +299,7 @@ html, body {
   }
 
   .introheader {
-    padding-top: 60%;
+    padding-top: 65%;
   }
 
   .aboutheader {
@@ -270,7 +310,7 @@ html, body {
     padding-left: 7%;
     padding-right: 5%;
     font-size: 2.5em;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     line-height: 0.1em;
   }
 
@@ -304,13 +344,24 @@ html, body {
     width: 300px;
     height: 300px;
     right: 5%;
-    top: 10%;
+    top: 5%;
   }
 
   .introtext, .abouttext {
     font-size: 1.5em;
     padding-left: 7%;
     padding-right: 5%;
+  }
+
+  .introtext {
+    height: 70vh;
+  }
+
+  .introtext::before {
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 80%;
   }
 
   .tagcloud {
@@ -320,7 +371,7 @@ html, body {
   }
 
   .introheader {
-    padding-top: 40%;
+    padding-top: 30%;
   }
 
   .aboutheader {
@@ -364,7 +415,18 @@ html, body {
     width: 400px;
     height: 400px;
     right: 10%;
-    top: 10%;
+    top: 5%;
+  }
+
+  .introtext {
+    height: 90vh;
+  }
+
+  .introtext::before {
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 90%;
   }
 
   .introtext, .abouttext {
