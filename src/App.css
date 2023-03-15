@@ -284,17 +284,17 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 2.5rem }
+    to { width: 3.5rem }
   }
 
   @keyframes typing_2 {
     from { width: 0 }
-    to { width: 7.5rem }
+    to { width: 8.5rem }
   }
 
   @keyframes typing_3 {
     from { width: 0 }
-    to { width: 14rem }
+    to { width: 18rem }
   }
 
   .burgernav {
@@ -332,17 +332,17 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 3rem }
+    to { width: 3.5rem }
   }
 
   @keyframes typing_2 {
     from { width: 0 }
-    to { width: 9.5rem }
+    to { width: 11rem }
   }
 
   @keyframes typing_3 {
     from { width: 0 }
-    to { width: 18rem }
+    to { width: 24rem }
   }
 
   .introtext, .abouttext {
@@ -434,17 +434,17 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 4rem }
+    to { width: 7rem }
   }
 
   @keyframes typing_2 {
     from { width: 0 }
-    to { width: 12rem }
+    to { width: 16rem }
   }
 
   @keyframes typing_3 {
     from { width: 0 }
-    to { width: 23rem }
+    to { width: 29rem }
   }
 
   .introtext {
@@ -535,17 +535,17 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 5rem }
+    to { width: 9rem }
   }
 
   @keyframes typing_2 {
     from { width: 0 }
-    to { width: 17rem }
+    to { width: 22rem }
   }
 
   @keyframes typing_3 {
     from { width: 0 }
-    to { width: 32rem }
+    to { width: 38rem }
   }
 
   .workitem {
@@ -629,17 +629,17 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 7rem }
+    to { width: 9rem }
   }
 
   @keyframes typing_2 {
     from { width: 0 }
-    to { width: 23rem }
+    to { width: 25rem }
   }
 
   @keyframes typing_3 {
     from { width: 0 }
-    to { width: 45rem }
+    to { width: 49rem }
   }
 
   .introtext {
