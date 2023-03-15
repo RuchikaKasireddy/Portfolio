@@ -23,25 +23,23 @@ function Work() {
       </div>
       {workExperience.map(item => (
         <>
-          <div key={item.id} className="workitem" onClick={() => toggleCollapse(item.id)}>
+          <div key={item.id} className={`workitem ${item.collapsed ? "bubble" : ""}`} onClick={() => toggleCollapse(item.id)}>
             <div className="worktitle">
               <p className="bluehighlight">{item.companyName}</p>
               <p className="yellowhighlight">{item.jobTitle}</p>
             </div>
-            {!item.collapsed && (
-              <div className="workdetails">
-                <p>{item.startDate} - {item.endDate}</p>
-                <p>{item.location}</p>
-                <div className="responsibilitieslist">
-                  <div className="listicon" />
-                  <ul>
-                    {item.responsibilities.map((responsibility, index) => (
-                      <li key={index}>{parse(responsibility.replace(/<mark>(.*?)<\/mark>/g, '<span class="orangehighlight">$1</span>'))}</li>
-                    ))}
-                  </ul>
-                </div>
+            <div className={`workdetails ${item.collapsed ? "" : "visible"}`}>
+              <p>{item.startDate} - {item.endDate}</p>
+              <p>{item.location}</p>
+              <div className="responsibilitieslist">
+                <div className="listicon" />
+                <ul>
+                  {item.responsibilities.map((responsibility, index) => (
+                    <li key={index}>{parse(responsibility.replace(/<mark>(.*?)<\/mark>/g, '<span class="orangehighlight">$1</span>'))}</li>
+                  ))}
+                </ul>
               </div>
-            )}
+            </div>
           </div>
           <br />
         </>
