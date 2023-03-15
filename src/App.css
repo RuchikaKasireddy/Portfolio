@@ -12,11 +12,47 @@ html, body {
   color: white;
 }
 
-.canvas {
+.workitem {
+  border: solid 2px rgba(255, 255, 255, 0.5);
+}
+
+.worktitle {
+  text-align: left;
+}
+
+.responsibilitieslist {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1%
+}
+
+.responsibilitieslist li {
+  list-style-type: none;
+}
+
+.responsibilitieslist ul {
+  border-left: solid 2px rgba(255, 255, 255, 0.3);
+  margin-left: 1em;
+  padding-left: 5%;
+}
+
+.listicon::before {
+  content: "<ul>";
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: block;
+}
+
+.listicon::after {
+  content: "</ul>";
+  position: absolute;
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: block;
 }
 
 .background {
@@ -56,7 +92,7 @@ html, body {
   color: #d3d39e;
 }
 
-.introheader, .aboutheader {
+.introheader, .aboutheader, .workheader {
   font-weight: bold;
 }
 
@@ -131,7 +167,7 @@ html, body {
   list-style: none;
 }
 
-#introduction, #about {
+#introduction, #about, #work {
   min-height: 100vh;
 }
 
@@ -157,6 +193,20 @@ html, body {
     padding-top: 1%;
   }
 
+  .workitem {
+    font-size: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    cursor: pointer;
+  }
+
+  .worktitle {
+    font-size: 1.25em;
+  }
+
   .tagcloud {
     padding: 10%;
     padding-top: 1%;
@@ -166,11 +216,11 @@ html, body {
     padding-top: 70%;
   }
 
-  .aboutheader {
+  .aboutheader, .workheader {
     padding-top: 20%;
   }
 
-  .introheader, .aboutheader {
+  .introheader, .aboutheader, .workheader {
     padding-left: 10%;
     padding-right: 10%;
     font-size: 1.5em;
@@ -224,6 +274,20 @@ html, body {
     height: 80%;
   }
 
+  .workitem {
+    font-size: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    cursor: pointer;
+  }
+
+  .worktitle {
+    font-size: 1.5em;
+  }
+
   .tagcloud {
     padding: 10%;
     padding-top: 0;
@@ -233,11 +297,11 @@ html, body {
     padding-top: 70%;
   }
 
-  .aboutheader {
+  .aboutheader, .workheader {
     padding-top: 20%;
   }
 
-  .introheader, .aboutheader {
+  .introheader, .aboutheader, .workheader {
     padding-left: 10%;
     padding-right: 10%;
     font-size: 2em;
@@ -295,6 +359,20 @@ html, body {
     height: 50%;
   }
 
+  .workitem {
+    font-size: 1.5em;
+    margin-left: 7%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    cursor: pointer;
+  }
+
+  .worktitle {
+    font-size: 1.5em;
+  }
+
   .tagcloud {
     padding-top: 2%;
     padding-left:  7%;
@@ -305,11 +383,11 @@ html, body {
     padding-top: 65%;
   }
 
-  .aboutheader {
+  .aboutheader, .workheader {
     padding-top: 5%;
   }
 
-  .introheader, .aboutheader {
+  .introheader, .aboutheader, .workheader {
     padding-left: 7%;
     padding-right: 5%;
     font-size: 2.5em;
@@ -356,6 +434,20 @@ html, body {
     padding-right: 5%;
   }
 
+  .workitem {
+    font-size: 1.5em;
+    margin-left: 7%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    cursor: pointer;
+  }
+
+  .worktitle {
+    font-size: 2em;
+  }
+
   .introtext {
     height: 70vh;
   }
@@ -377,11 +469,11 @@ html, body {
     padding-top: 30%;
   }
 
-  .aboutheader {
+  .aboutheader, .workheader {
     padding-top: 5%;
   }
 
-  .introheader, .aboutheader {
+  .introheader, .aboutheader, .workheader {
     padding-left: 7%;
     padding-right: 5%;
     font-size: 3.5em;
@@ -438,6 +530,20 @@ html, body {
     padding-right: 10%;
   }
 
+  .workitem {
+    font-size: 1.5em;
+    margin-left: 5%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    cursor: pointer;
+  }
+
+  .worktitle {
+    font-size: 2.5em;
+  }
+
   .tagcloud {
     padding-left:  5%;
     padding-right: 10%;
@@ -448,11 +554,11 @@ html, body {
     padding-top: 20%;
   }
 
-  .aboutheader {
+  .aboutheader, .workheader {
     padding-top: 5%;
   }
 
-  .introheader, .aboutheader {
+  .introheader, .aboutheader, .workheader {
     padding-left: 5%;
     font-size: 5em;
     line-height: 0.1em;

@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "companyName": "DotSolved Systems Inc",
+        "jobTitle": "Full Stack Developer Intern",
+        "startDate": "July 2022",
+        "endDate": "Aug 2022",
+        "location": "Pleasanton, CA",
+        "responsibilities": [
+            "Developed a dynamic customer onboarding tool using Node.js and React, resulting in a <mark>30%</mark> increase in speed and <mark>$10,000-$20,000</mark> increase in revenue.",
+            "Led end-to-end research and development efforts to convert proof-of-concepts to functional tools, enabling customization such as autosave, type selection, drag-and-drop, and multi-level reordering.",
+            "Trained a 3-member team on React, Node.js, and PostgreSQL, resulting in saved training and consulting costs worth <mark>$2,000-$4,000 per member</mark>."
+        ],
+        "collapsed": true
+    },
+    {
+        "id": 2,
+        "companyName": "AirAsia Technology Center",
+        "jobTitle": "Software Engineer",
+        "startDate": "Sep 2020",
+        "endDate": "Jul 2021",
+        "location": "Bangalore, India",
+        "responsibilities": [
+            "Redesigned the hotel cancellation pipeline, automating bulk cancellation for 800+ clients and saving <mark>~$500 per customer per day</mark> in hotel reimbursements.",
+            "Improved customer-service <mark>turnaround time by 90%</mark> using cloud-based functions with BigQuery, leading to retention of <mark>500 successful transactions per day</mark> generating <mark>$180,000 in gross revenue annually</mark>.",
+            "Enhanced the booking experience through flexible date customization, resulting in a <mark>20% increase in conversion rate, 80% increase in engagement</mark> and a team <mark>revenue boost of ~$17,000 annually</mark>.",
+            "Led testing and debugging efforts, <mark>saving 4.5 hours</mark> of testing effort per release."
+        ],
+        "collapsed": true
+    },
+    {
+        "id": 3,
+        "companyName": "LogMeIn",
+        "jobTitle": "Associate Software Engineer Intern",
+        "startDate": "Jan 2020",
+        "endDate": "Jul 2020",
+        "location": "Bangalore, India",
+        "responsibilities": [
+            "Designed a tool for monitoring and redirecting AWS Direct Connect traffic during AWS Health events, resulting in a reduction of time from <mark>45 minutes to 2 minutes</mark>.",
+            "Developed lambda functions to update database entries and SNS trigger for AWS Health, <mark>reducing downtime by 20%</mark> and <mark>saving $2,500</mark> in costs.",
+            "Refactored and automated the employee onboarding process, reducing duration from <mark>2 days to 30 minutes, saving $1,000 per employee</mark>, and providing managers with visibility into onboarding progress."
+        ],
+        "collapsed": true
+    }
+]
