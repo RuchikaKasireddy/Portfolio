@@ -1,6 +1,24 @@
 import React from 'react';
 
 function Intro() {
+  const rotateStrings = ["Full Stack Developer", "Software Engineer", "Web Developer"];
+  const intervalLength = 5000;
+  let curIdx = 0;
+  function loop() {
+    const div = document.getElementById("rotatingheader");
+    div.innerHTML = rotateStrings[curIdx];
+    div.classList.remove("deleting");
+    div.classList.add("typing");
+    setTimeout(() => {
+      div.classList.remove("typing");
+      div.classList.add("deleting");
+    }, 2000);
+    curIdx = (curIdx + 1) % rotateStrings.length;
+  }
+  window.addEventListener("load", () => {
+    loop();
+  });
+  setInterval(loop, intervalLength);
   return (
     <div id="introduction">
       <div className="background">
@@ -11,7 +29,7 @@ function Intro() {
           <div className="introheader">
             <p className="pinkhighlight">Hi,</p>
             <p className="bluehighlight">I'm Aman,</p>
-            <p className="orangehighlight">Full Stack Developer</p>
+            <p id="rotatingheader" className="orangehighlight">Full Stack Developer</p>
           </div>
           <div className="introtext">
             <p>
