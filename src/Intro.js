@@ -17,6 +17,7 @@ function Intro() {
   }
 
   useEffect(() => {
+    loop();
     setInterval(loop, intervalLength);
   });
   
