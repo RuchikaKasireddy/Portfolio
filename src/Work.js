@@ -22,8 +22,7 @@ function Work() {
         <p className="orangehighlight">Work Experience</p>
       </div>
       {workExperience.map(item => (
-        <>
-          <div key={item.id} className={`workitem ${item.collapsed ? "bubble" : ""}`} onClick={() => toggleCollapse(item.id)}>
+        <div key={item.id} className={`workitem ${item.collapsed ? "bubble" : ""}`} onClick={() => toggleCollapse(item.id)}>
             <div className="worktitle">
               <p className="bluehighlight">{item.companyName}</p>
               <p className="yellowhighlight">{item.jobTitle}</p>
@@ -40,9 +39,8 @@ function Work() {
                 </ul>
               </div>
             </div>
-          </div>
           <br />
-        </>
+        </div>
       ))}
     </div>
   );

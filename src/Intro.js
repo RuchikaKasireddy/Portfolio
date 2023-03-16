@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Intro() {
   const rotateStrings = ["Full Stack Developer", "Software Engineer", "Web Developer"];
@@ -15,10 +15,11 @@ function Intro() {
     }, 2000);
     curIdx = (curIdx + 1) % rotateStrings.length;
   }
-  window.addEventListener("load", () => {
-    loop();
+
+  useEffect(() => {
+    setInterval(loop, intervalLength);
   });
-  setInterval(loop, intervalLength);
+  
   return (
     <div id="introduction">
       <div className="background">
@@ -29,7 +30,7 @@ function Intro() {
           <div className="introheader">
             <p className="pinkhighlight">Hi,</p>
             <p className="bluehighlight">I'm Aman,</p>
-            <p id="rotatingheader" className="orangehighlight">Full Stack Developer</p>
+            <p id="rotatingheader" className="orangehighlight"></p>
           </div>
           <div className="introtext">
             <p>
