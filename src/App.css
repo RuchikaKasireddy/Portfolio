@@ -19,7 +19,7 @@ html, body {
   width: 100%;
   background-color: #1e1e1e;
   scroll-behavior: smooth;
-  font-family: serif;
+  font-family: monospace;
   text-align: justify;
   color: white;
 }
