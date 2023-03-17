@@ -277,11 +277,11 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 18rem }
+    to { width: 24rem }
   }
 
   @keyframes deletion {
-    from { width: 18rem }
+    from { width: 24rem }
     to { width: 0 }
   }
 
@@ -320,11 +320,11 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 24rem }
+    to { width: 28rem }
   }
 
   @keyframes deletion {
-    from { width: 24rem }
+    from { width: 28rem }
     to { width: 0 }
   }
 
@@ -417,11 +417,11 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 29rem }
+    to { width: 35rem }
   }
 
   @keyframes deletion {
-    from { width: 29rem }
+    from { width: 35rem }
     to { width: 0 }
   }
 
@@ -513,11 +513,11 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 38rem }
+    to { width: 50rem }
   }
 
   @keyframes deletion {
-    from { width: 38rem }
+    from { width: 50rem }
     to { width: 0 }
   }
 
@@ -602,11 +602,11 @@ html, body {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 49rem }
+    to { width: 70rem }
   }
 
   @keyframes deletion {
-    from { width: 49rem }
+    from { width: 70rem }
     to { width: 0 }
   }
 
