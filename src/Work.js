@@ -25,8 +25,11 @@ function Work() {
         <div key={item.id}>
           <div key={item.id} className={`workitem ${item.collapsed ? "bubble" : ""}`} onClick={() => toggleCollapse(item.id)}>
             <div className="worktitle">
-              <p className="bluehighlight">{item.companyName}</p>
-              <p className="yellowhighlight">{item.jobTitle}</p>
+              <div>
+                <p className="bluehighlight">{item.companyName}</p>
+                <p className="yellowhighlight">{item.jobTitle}</p>
+              </div>
+              <div className={`arrow${item.collapsed ? "down" : "up"}`} />
             </div>
             <div className={`workdetails ${item.collapsed ? "" : "visible"}`}>
               <p>{item.startDate} - {item.endDate}</p>

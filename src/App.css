@@ -24,6 +24,22 @@ html, body {
   color: white;
 }
 
+.arrowdown {
+  width: 0;
+  height: 0;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  border-top: 0.5em solid white;
+}
+
+.arrowup {
+  width: 0;
+  height: 0;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  border-bottom: 0.5em solid white;
+}
+
 .workdetails {
   max-height: 0;
   overflow: hidden;
@@ -37,6 +53,7 @@ html, body {
 
 .workitem {
   border: solid 2px rgba(255, 255, 255, 0.5);
+  position: relative;
 }
 
 .workitem.bubble {
@@ -45,6 +62,10 @@ html, body {
 
 .worktitle {
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .responsibilitieslist {
@@ -99,7 +120,7 @@ html, body {
   background-image: url('../images/code.png');
   background-size: contain;
   background-repeat:repeat-y;
-  opacity: 0.13;
+  opacity: 0.05;
   width: 100%;
   height: 100%;
 }
@@ -403,10 +424,10 @@ html, body {
 
 @media only screen and (min-width: 501px) and (max-width: 750px) {
   .profilepicture {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     right: 5%;
-    top: 5%;
+    top: 2%;
   }
 
   .introtext, .abouttext {
@@ -457,7 +478,7 @@ html, body {
   }
 
   .introheader {
-    padding-top: 65%;
+    padding-top: 10%;
   }
 
   .aboutheader, .workheader {
@@ -499,10 +520,10 @@ html, body {
 
 @media only screen and (min-width: 751px) and (max-width: 1200px) {
   .profilepicture {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     right: 5%;
-    top: 5%;
+    top: 1.5%;
   }
 
   .introtext, .abouttext {
@@ -553,7 +574,7 @@ html, body {
   }
 
   .introheader {
-    padding-top: 45%;
+    padding-top: 10%;
   }
 
   .aboutheader, .workheader {
@@ -596,8 +617,8 @@ html, body {
   .profilepicture {
     width: 400px;
     height: 400px;
-    right: 10%;
-    top: 5%;
+    right: 5%;
+    top: 2%;
   }
 
   @keyframes typing {
@@ -624,7 +645,7 @@ html, body {
   .introtext, .abouttext {
     font-size: 1.5em;
     padding-left: 5%;
-    padding-right: 10%;
+    padding-right: 5%;
   }
 
   .workitem {
@@ -648,7 +669,7 @@ html, body {
   }
 
   .introheader {
-    padding-top: 40%;
+    padding-top: 10%;
   }
 
   .aboutheader, .workheader {
