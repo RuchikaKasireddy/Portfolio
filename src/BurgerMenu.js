@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 
 function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeNav, setActiveNav] = useState("Introduction");
 
   function toggleMenu() {
     setIsOpen(!isOpen);
   }
 
-  function closeMenu() {
+  function closeMenu(e) {
     setIsOpen(false);
+    setActiveNav(e.target.innerHTML);
   }
 
   return (
@@ -30,17 +32,17 @@ function BurgerMenu() {
           &times;
         </button>
         <ul className="burgerlist">
-          <li>
+          <li className={activeNav === "Introduction" ? "active" : ""}>
             <a className="burgertext" href="#introduction" onClick={closeMenu}>
               Introduction
             </a>
           </li>
-          <li>
+          <li className={activeNav === "About" ? "active" : ""}>
             <a className="burgertext" href="#about" onClick={closeMenu}>
               About
             </a>
           </li>
-          <li>
+          <li className={activeNav === "Work" ? "active" : ""}>
             <a className="burgertext" href="#work" onClick={closeMenu}>
               Work
             </a>

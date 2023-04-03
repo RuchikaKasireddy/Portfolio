@@ -182,23 +182,10 @@ html, body {
   transform: scale(1.5);
 }
 
-.burgerbutton {
-  border: none;
-  background-color: transparent;
-  color: white;
-  position: fixed;
-  z-index: 3;
-  cursor: pointer;
-}
-
 .burgernav {
   position: fixed;
   top: 0;
-  left: -100%;
-  height: 100%;
-  background-color: black;
   color: white;
-  transition: left 0.5s ease-in-out;
   z-index: 2;
 }
 
@@ -214,16 +201,6 @@ html, body {
   right: 0;
   width: 100%;
   height: 100%;
-}
-
-.burgerclose {
-  color: white;
-  border: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .burgertext {
@@ -312,6 +289,9 @@ html, body {
     align-items: center;
     justify-content: center;
     transition: left 0.2s ease-in-out;
+    left: -100%;
+    height: 100%;
+    background-color: black;
   }
 
   .burgerlist {
@@ -322,12 +302,31 @@ html, body {
   }
 
   .burgerbutton, .burgerclose, .burgertext {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .burgerbackground {
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
+  }
+
+  .burgerbutton {
+    border: none;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .burgerclose {
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    cursor: pointer;
   }
 }
 
@@ -403,6 +402,9 @@ html, body {
     align-items: center;
     justify-content: center;
     transition: left 0.2s ease-in-out;
+    left: -100%;
+    height: 100%;
+    background-color: black;
   }
 
   .burgerlist {
@@ -413,12 +415,31 @@ html, body {
   }
 
   .burgerbutton, .burgerclose, .burgertext {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .burgerbackground {
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
+  }
+
+  .burgerbutton {
+    border: none;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .burgerclose {
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    cursor: pointer;
   }
 }
 
@@ -499,6 +520,9 @@ html, body {
     align-items: center;
     justify-content: center;
     transition: left 0.2s ease-in-out;
+    left: -100%;
+    height: 100%;
+    background-color: black;
   }
 
   .burgerlist {
@@ -509,21 +533,40 @@ html, body {
   }
 
   .burgerbutton, .burgerclose, .burgertext {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .burgerbackground {
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
   }
+
+  .burgerbutton {
+    border: none;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .burgerclose {
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (min-width: 751px) and (max-width: 1200px) {
   .profilepicture {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     right: 5%;
-    top: 1.5%;
+    top: 10%;
   }
 
   .introtext, .abouttext {
@@ -589,36 +632,48 @@ html, body {
   }
   
   .burgernav {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 10px 0px 10px white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .burgerlist {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
   }
 
-  .burgerbutton, .burgerclose, .burgertext {
-    font-size: 1.5em;
+  .burgerlist > li {
+    height: 100%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding: 2%;
   }
 
-  .burgerbackground {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
+  .burgerlist > li:first-child {
+    padding-left: 7%;
+  }
+
+  .burgerlist > li.active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .burgertext {
+    font-size: 2.5em;
+  }
+
+  .burgerbutton, .burgerclose {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 1201px) {
   .profilepicture {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     right: 5%;
-    top: 2%;
+    top: 8%;
   }
 
   @keyframes typing {
@@ -684,26 +739,34 @@ html, body {
   }
 
   .burgernav {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 10px 0px 10px white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .burgerlist {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
   }
 
-  .burgerbutton, .burgerclose, .burgertext {
-    font-size: 1.5em;
+  .burgerlist > li {
+    height: 100%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding: 2%;
   }
 
-  .burgerbackground {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
+  .burgerlist > li.active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .burgertext {
+    font-size: 2.5em;
+  }
+
+  .burgerbutton, .burgerclose {
+    display: none;
   }
 }
