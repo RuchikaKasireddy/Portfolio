@@ -203,7 +203,7 @@ html, body {
   height: 100%;
 }
 
-.burgertext {
+.burgertext, .contacticons {
   text-decoration-line: none;
   color: white;
 }
@@ -301,7 +301,7 @@ html, body {
     justify-content: center;
   }
 
-  .burgerbutton, .burgerclose, .burgertext {
+  .burgerbutton, .burgerclose, .burgertext, .contacticons {
     font-size: 2em;
   }
 
@@ -414,7 +414,7 @@ html, body {
     justify-content: center;
   }
 
-  .burgerbutton, .burgerclose, .burgertext {
+  .burgerbutton, .burgerclose, .burgertext, .contacticons {
     font-size: 2em;
   }
 
@@ -532,7 +532,7 @@ html, body {
     justify-content: center;
   }
 
-  .burgerbutton, .burgerclose, .burgertext {
+  .burgerbutton, .burgerclose, .burgertext, .contacticons {
     font-size: 2em;
   }
 
@@ -638,13 +638,14 @@ html, body {
 
   .burgerlist {
     display: flex;
+    align-items: flex-start;
     margin: 0;
     width: 100%;
     height: 100%;
     padding: 0;
   }
 
-  .burgerlist > li {
+  .burgerlist > li, .burgerlist > a {
     height: 100%;
     padding-right: 3%;
     padding-left: 3%;
@@ -659,7 +660,7 @@ html, body {
     background-color: rgba(255, 255, 255, 0.3);
   }
 
-  .burgertext {
+  .burgertext, .contacticons {
     font-size: 2.5em;
   }
 
@@ -745,13 +746,14 @@ html, body {
 
   .burgerlist {
     display: flex;
+    align-items: flex-start;
     margin: 0;
     width: 100%;
     height: 100%;
     padding: 0;
   }
 
-  .burgerlist > li {
+  .burgerlist > li, .burgerlist > a {
     height: 100%;
     padding-right: 3%;
     padding-left: 3%;
@@ -762,7 +764,7 @@ html, body {
     background-color: rgba(255, 255, 255, 0.3);
   }
 
-  .burgertext {
+  .burgertext, .contacticons {
     font-size: 2.5em;
   }
 

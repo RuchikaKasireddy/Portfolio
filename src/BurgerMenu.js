@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +48,15 @@ function BurgerMenu() {
               Work
             </a>
           </li>
+          <a className="contacticons" href="https://www.github.com/aman04jdsj" target="_blank" rel="noreferrer">
+            <AiOutlineGithub />
+          </a>
+          <a className="contacticons" href="https://www.linkedin.com/in/amanthirbhat" target="_blank" rel="noreferrer">
+            <AiOutlineLinkedin />
+          </a>
+          <a className="contacticons" href="mailto:amanthir@usc.edu" target="_blank" rel="noreferrer">
+            <AiOutlineMail />
+          </a>
         </ul>
       </nav>
     </>
