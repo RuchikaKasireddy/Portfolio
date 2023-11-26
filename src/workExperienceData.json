@@ -1,6 +1,19 @@
 [
     {
         "id": 1,
+        "companyName": "Easley-Dunn Productions Inc",
+        "jobTitle": "Lead Software Engineer, Analytics",
+        "startDate": "July 2023",
+        "endDate": "Present",
+        "location": "San Jose, CA",
+        "responsibilities": [
+            "Successfully integrated Firebase Analytics into the Robot Race mobile game using Unity and C#, meticulously documenting the process. Efficiently configured event tracking for crucial in-game actions and events.",
+            "Utilized BigQuery, SQL, Python, and React to visualize and analyze collected statistics, providing valuable insights into player behavior, and contributing to game performance improvements."
+        ],
+        "collapsed": true
+    },
+    {
+        "id": 2,
         "companyName": "DotSolved Systems Inc",
         "jobTitle": "Full Stack Developer Intern",
         "startDate": "July 2022",
@@ -14,7 +27,7 @@
         "collapsed": true
     },
     {
-        "id": 2,
+        "id": 3,
         "companyName": "AirAsia Technology Center",
         "jobTitle": "Software Engineer",
         "startDate": "Sep 2020",
@@ -29,7 +42,7 @@
         "collapsed": true
     },
     {
-        "id": 3,
+        "id": 4,
         "companyName": "LogMeIn",
         "jobTitle": "Associate Software Engineer Intern",
         "startDate": "Jan 2020",
