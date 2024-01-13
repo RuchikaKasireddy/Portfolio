@@ -54,7 +54,7 @@ function BurgerMenu() {
           <a className="contacticons" href="https://www.linkedin.com/in/amanthirbhat" target="_blank" rel="noreferrer">
             <AiOutlineLinkedin />
           </a>
-          <a className="contacticons" href="mailto:amanthir@usc.edu" target="_blank" rel="noreferrer">
+          <a className="contacticons" href="mailto:aman04jdsj@gmail.com" target="_blank" rel="noreferrer">
             <AiOutlineMail />
           </a>
         </ul>

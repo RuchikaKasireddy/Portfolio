@@ -7,8 +7,8 @@
         "endDate": "Present",
         "location": "San Jose, CA",
         "responsibilities": [
-            "Architected and launched the Fundit website from ground up, along with a robust backend restful API suite for authentication and data management using Weweb, Xano, JavaScript, MySQL, and CSS, ensuring a user-friendly and secure financial platform.",
-            "Pioneered a conversational AI financial analyst using Next.js, Supabase and OpenAI APIs, enabling dynamic data extraction and visualization with fine control over chart configuration and code customization with seamless conversation history."
+            "Architected and launched the Fundit website from ground up, along with a robust backend <mark>restful API suite</mark> for authentication and data management using <mark>Weweb, Xano, JavaScript, MySQL</mark>, and <mark>CSS</mark>, ensuring a user-friendly and secure financial platform.",
+            "Pioneered a <mark>conversational AI financial analyst</mark> using Next.js, Supabase and OpenAI APIs, enabling <mark>dynamic data extraction</mark> and <mark>visualization</mark> with fine control over chart configuration and code customization with seamless conversation history."
         ],
         "collapsed": true
     },
@@ -20,8 +20,8 @@
         "endDate": "Present",
         "location": "San Jose, CA",
         "responsibilities": [
-            "Successfully integrated Firebase Analytics into the Robot Race mobile game using Unity and C#, meticulously documenting the process. Efficiently configured event tracking for crucial in-game actions and events.",
-            "Utilized BigQuery, SQL, Python, and React to visualize and analyze collected statistics, providing valuable insights into player behavior, and contributing to game performance improvements."
+            "Successfully integrated <mark>Firebase</mark> Analytics into the Robot Race mobile game using <mark>Unity</mark> and C#, meticulously documenting the process. Efficiently configured event tracking for crucial in-game actions and events.",
+            "Utilized <mark>BigQuery, SQL, Python,</mark> and <mark>React</mark> to visualize and analyze collected statistics, providing valuable insights into player behavior, and contributing to game performance improvements."
         ],
         "collapsed": true
     },
@@ -34,8 +34,7 @@
         "location": "Pleasanton, CA",
         "responsibilities": [
             "Developed a dynamic customer onboarding tool using Node.js and React, resulting in a <mark>30%</mark> increase in speed and <mark>$10,000-$20,000</mark> increase in revenue.",
-            "Led end-to-end research and development efforts to convert proof-of-concepts to functional tools, enabling customization such as autosave, type selection, drag-and-drop, and multi-level reordering.",
-            "Trained a 3-member team on React, Node.js, and PostgreSQL, resulting in saved training and consulting costs worth <mark>$2,000-$4,000 per member</mark>."
+            "Led end-to-end research and development efforts to convert proof-of-concepts to functional tools, enabling customization such as <mark>autosave, type selection, drag-and-drop</mark>, and <mark>multi-level reordering.</mark>"
         ],
         "collapsed": true
     },
@@ -47,10 +46,9 @@
         "endDate": "Jul 2021",
         "location": "Bangalore, India",
         "responsibilities": [
-            "Redesigned the hotel cancellation pipeline, automating bulk cancellation for 800+ clients and saving <mark>~$500 per customer per day</mark> in hotel reimbursements.",
-            "Improved customer-service <mark>turnaround time by 90%</mark> using cloud-based functions with BigQuery, leading to retention of <mark>500 successful transactions per day</mark> generating <mark>$180,000 in gross revenue annually</mark>.",
-            "Enhanced the booking experience through flexible date customization, resulting in a <mark>20% increase in conversion rate, 80% increase in engagement</mark> and a team <mark>revenue boost of ~$17,000 annually</mark>.",
-            "Led testing and debugging efforts, <mark>saving 4.5 hours</mark> of testing effort per release."
+            "Redesigned the hotel cancellation pipeline using BigQuery and Google Cloud Functions, automating bulk cancellation for <mark>800+</mark> clients and saving <mark>~$500</mark> per customer per day in hotel reimbursements.",
+            "Improved customer-service <mark>turnaround time by 90%</mark> using cloud-based functions, leading to retention of <mark>>500 successful transactions per day</mark> generating <mark>$180,000 in gross revenue annually.</mark>",
+            "Enhanced the booking experience for <mark>13 million MAUs</mark> through flexible date customization using React/React Native, Go, TypeScript and Java, resulting in a <mark>20% increase in conversion rate, 80% increase in engagement</mark> and a team <mark>revenue boost of ~$17,000 annually.</mark>"
         ],
         "collapsed": true
     },

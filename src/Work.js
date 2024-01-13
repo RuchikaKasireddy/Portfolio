@@ -23,7 +23,7 @@ function Work() {
       </div>
       {workExperience.map(item => (
         <div key={item.id}>
-          <div key={item.id} className={`workitem ${item.collapsed ? "bubble" : ""}`} onClick={() => toggleCollapse(item.id)}>
+          <div key={item.id} className="workitem" onClick={() => toggleCollapse(item.id)}>
             <div className="worktitle">
               <div>
                 <p className="bluehighlight">{item.companyName}</p>
@@ -38,7 +38,10 @@ function Work() {
                 <div className="listicon" />
                 <ul>
                   {item.responsibilities.map((responsibility, index) => (
-                    <li key={index}>{parse(responsibility.replace(/<mark>(.*?)<\/mark>/g, '<span class="orangehighlight">$1</span>'))}</li>
+                    <>
+                      <li key={index}>{parse(responsibility.replace(/<mark>(.*?)<\/mark>/g, '<span class="orangehighlight">$1</span>'))}</li>
+                      <br />
+                    </>
                   ))}
                 </ul>
               </div>

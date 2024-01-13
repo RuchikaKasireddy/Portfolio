@@ -4,21 +4,23 @@ import { shuffle } from 'lodash';
 
 const beginner = 1;
 const intermediate = 2;
-const advanced = 3;
+const semi_pro = 3;
+const professional = 4;
 
 const skilltags = [
-  { value: 'Python', count: advanced },
+  { value: 'NextJS', count: professional },
+  { value: 'Python', count: professional },
   { value: 'Java', count: intermediate },
   { value: 'Golang', count: beginner },
-  { value: 'React', count: advanced },
-  { value: 'React Native', count: advanced },
-  { value: 'Angular.js', count: advanced },
-  { value: 'Node.js', count: advanced },
-  { value: 'HTML', count: advanced },
-  { value: 'CSS', count: advanced },
-  { value: 'JavaScript', count: advanced },
-  { value: 'MySQL', count: advanced },
-  { value: 'PostgreSQL', count: intermediate },
+  { value: 'React', count: professional },
+  { value: 'React Native', count: semi_pro },
+  { value: 'Angular.js', count: semi_pro },
+  { value: 'Node.js', count: professional },
+  { value: 'HTML', count: semi_pro },
+  { value: 'CSS', count: semi_pro },
+  { value: 'JavaScript', count: semi_pro },
+  { value: 'MySQL', count: semi_pro },
+  { value: 'PostgreSQL', count: semi_pro },
   { value: 'MongoDB', count: beginner },
   { value: 'DynamoDB', count: beginner },
   { value: 'AWS Lambda', count: intermediate },
