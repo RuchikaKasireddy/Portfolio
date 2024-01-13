@@ -57,11 +57,10 @@ function About() {
       </div>
       <div className="abouttext">
         <p>
-          I'm currently pursuing a Masters degree in Computer Science
-          at the University of Southern California, and I'm
-          expected to graduate in May 2023. This degree has allowed me to deepen
-          my understanding of computer science concepts, and I'm excited to apply
-          this knowledge to my future projects.
+          I graduated from the <span className="orangehighlight">University of Southern California </span>with a <span className="orangehighlight">Master's Degree </span>
+          in Computer Science. I'm currently developing a <span className="orangehighlight">conversational AI financial analyst</span> at Fundit Inc,
+          enabling dynamic data extraction and visualization capabilities. I also lead a team of 6 in the analytics
+          division of the RobotRace segment at Easley-Dunn Productions Inc.
         </p>
         <p>
           This website has been built using<span className="orangehighlight"> React.js, </span> which is one of my favorite
