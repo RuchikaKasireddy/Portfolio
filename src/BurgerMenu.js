@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail, AiOutlineFilePdf } from 'react-icons/ai';
+import pdf from './AmanTBhat_Resume.pdf'
 
 function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,6 +49,9 @@ function BurgerMenu() {
               Work
             </a>
           </li>
+          <a className="burgertext" href={pdf} target="_blank" rel="noreferrer">
+            <div className="resumeburger"><AiOutlineFilePdf /> Resume</div>
+          </a>
           <a className="contacticons" href="https://www.github.com/aman04jdsj" target="_blank" rel="noreferrer">
             <AiOutlineGithub />
           </a>

@@ -2,13 +2,6 @@
   50% { opacity: 0.0; }
 }
 
-@keyframes bubble {
-  40% { 
-    opacity: 0.8;
-    transform: scale(1.01);
-  }
-}
-
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: white; }
@@ -54,10 +47,6 @@ html, body {
 .workitem {
   border: solid 2px rgba(255, 255, 255, 0.5);
   position: relative;
-}
-
-.workitem.bubble {
-  animation: bubble 1.5s ease-in-out infinite;
 }
 
 .worktitle {
@@ -214,6 +203,12 @@ html, body {
 
 #introduction, #about, #work {
   max-height: 1500px;
+}
+
+.resumeburger {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 400px) {
