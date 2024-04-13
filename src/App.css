@@ -109,7 +109,7 @@ html, body {
   background-image: url('../images/code.png');
   background-size: contain;
   background-repeat:repeat-y;
-  opacity: 0.05;
+  opacity: 0.15;
   width: 100%;
   height: 100%;
 }
@@ -135,22 +135,12 @@ html, body {
 }
 
 #rotatingheader {
-  width: 0;
+  display: inline-block;
+  white-space: pre;
   overflow: hidden;
+  align-content: center;
+  margin: 0;
   border-right: 0.1em solid white;
-  white-space: nowrap;
-}
-
-.typing {
-  animation: 
-    typing 2s steps(20, end) forwards infinite,
-    blink-caret 1s step-end infinite;
-}
-
-.deleting {
-  animation: 
-    deletion 2s steps(20) forwards,
-    blink-caret 1s step-end infinite;
 }
 
 .profilepicture {
@@ -168,7 +158,6 @@ html, body {
   background-image: url("../images/profile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  transform: scale(1.5);
 }
 
 .burgernav {
@@ -233,6 +222,10 @@ html, body {
     padding-top: 1%;
   }
 
+  #rotatingheader {
+    min-height: 1em;
+  }
+
   .workitem {
     font-size: 1em;
     margin-left: 10%;
@@ -266,16 +259,6 @@ html, body {
     font-size: 1.5em;
     padding-bottom: 5%;
     line-height: 1em;
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 24rem }
-  }
-
-  @keyframes deletion {
-    from { width: 24rem }
-    to { width: 0 }
   }
 
   .burgernav {
@@ -333,20 +316,14 @@ html, body {
     top: 5%;
   }
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 28rem }
-  }
-
-  @keyframes deletion {
-    from { width: 28rem }
-    to { width: 0 }
-  }
-
   .introtext, .abouttext {
     font-size: 1em;
     padding: 10%;
     padding-top: 1%;
+  }
+
+  #rotatingheader {
+    min-height: 1em;
   }
 
   .introtext::before {
@@ -452,14 +429,8 @@ html, body {
     padding-right: 5%;
   }
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 35rem }
-  }
-
-  @keyframes deletion {
-    from { width: 35rem }
-    to { width: 0 }
+  #rotatingheader {
+    min-height: 1.5em;
   }
 
   .introtext {
@@ -570,14 +541,8 @@ html, body {
     padding-right: 5%;
   }
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 50rem }
-  }
-
-  @keyframes deletion {
-    from { width: 50rem }
-    to { width: 0 }
+  #rotatingheader {
+    min-height: 1.5em;
   }
 
   .workitem {
@@ -672,16 +637,6 @@ html, body {
     top: 8%;
   }
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 70rem }
-  }
-
-  @keyframes deletion {
-    from { width: 70rem }
-    to { width: 0 }
-  }
-
   .introtext {
     height: 90vh;
   }
@@ -697,6 +652,10 @@ html, body {
     font-size: 1.5em;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  #rotatingheader {
+    min-height: 1.5em;
   }
 
   .workitem {

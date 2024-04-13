@@ -7,21 +7,24 @@
         "endDate": "Present",
         "location": "San Jose, CA",
         "responsibilities": [
-            "Architected and launched the Fundit website from ground up, along with a robust backend <mark>restful API suite</mark> for authentication and data management using <mark>Weweb, Xano, JavaScript, MySQL</mark>, and <mark>CSS</mark>, ensuring a user-friendly and secure financial platform.",
-            "Pioneered a <mark>conversational AI financial analyst</mark> using Next.js, Supabase and OpenAI APIs, enabling <mark>dynamic data extraction</mark> and <mark>visualization</mark> with fine control over chart configuration and code customization with seamless conversation history."
+            "Architected the Fundit website with authentication and data management using <mark>OAuth, Magic Link</mark> and <mark>MySQL</mark> and a robust backend <mark>REST API</mark> suite using <mark>Xano</mark>.",
+            "Ensured a user-friendly and secure financial platform using <mark>Weweb, Javascript</mark> and <mark>CSS</mark>.",
+            "Pioneered a conversational AI financial analyst enabling dynamic data extraction using <mark>Supabase (Postgres)</mark>, visualization using <mark>React.js, Next.js, Tailwind CSS</mark> and <mark>OpenAI LLMs</mark> with fine config control and customization."
         ],
         "collapsed": true
     },
     {
         "id": 2,
         "companyName": "Easley-Dunn Productions Inc",
-        "jobTitle": "Lead Software Engineer, Analytics",
+        "jobTitle": "Lead Software Engineer",
         "startDate": "Jul 2023",
         "endDate": "Present",
         "location": "San Jose, CA",
         "responsibilities": [
-            "Successfully integrated <mark>Firebase</mark> Analytics into the Robot Race mobile game using <mark>Unity</mark> and C#, meticulously documenting the process. Efficiently configured event tracking for crucial in-game actions and events.",
-            "Utilized <mark>BigQuery, SQL, Python,</mark> and <mark>React</mark> to visualize and analyze collected statistics, providing valuable insights into player behavior, and contributing to game performance improvements."
+            "Informed economy team strategies for the Robot Race game using <mark>C#, Unity Analytics, LiveOps (Remote Config)</mark> and <mark>Firebase Analytics</mark> and prompted tailored improvements with player behavior insights.",
+            "Extracted data from events using <mark>BigQuery</mark> and <mark>SQL</mark> and constructed a dashboard for monitoring and analysis.",
+            "Engineered the PluginImporter tool proactively using <mark>C#</mark> to automate management of Custom SDKs.",
+            "Devised the ErrorLogger util to enable <mark>real-time crash reporting</mark> with custom error messages, eliminating debugging effort for <mark>500+ error logs</mark>."
         ],
         "collapsed": true
     },
@@ -46,23 +49,26 @@
         "endDate": "Jul 2021",
         "location": "Bangalore, India",
         "responsibilities": [
-            "Redesigned the hotel cancellation pipeline using BigQuery and Google Cloud Functions, automating bulk cancellation for <mark>800+</mark> clients and saving <mark>~$500</mark> per customer per day in hotel reimbursements.",
-            "Improved customer-service <mark>turnaround time by 90%</mark> using cloud-based functions, leading to retention of <mark>>500 successful transactions per day</mark> generating <mark>$180,000 in gross revenue annually.</mark>",
-            "Enhanced the booking experience for <mark>13 million MAUs</mark> through flexible date customization using React/React Native, Go, TypeScript and Java, resulting in a <mark>20% increase in conversion rate, 80% increase in engagement</mark> and a team <mark>revenue boost of ~$17,000 annually.</mark>"
+            "Accelerated hotel cancellation <mark>turnaround time by 90%</mark> using <mark>BigQuery</mark> and <mark>Google Cloud Functions</mark> in <mark>Java</mark>, serving <mark>800+ transactions per day</mark> and saving <mark>~$500 per transaction</mark>.",
+            "Mitigated <mark>2 billable hours per transaction</mark> from the customer happiness team workload.",
+            "Enhanced the booking interface for <mark>13 million MAUs</mark> using <mark>React.js, Redux</mark> and <mark>React Native</mark> to incorporate flexible hotel dates.",
+            "Upgraded <mark>REST API</mark> suite using <mark>Java, Redis, Go</mark> and <mark>Typescript</mark> to accommodate flexible hotel bookings.",
+            "Induced <mark>20% increase in conversion rate, 80% increase in engagement</mark> and <mark>revenue boost of ~$17,000 annually</mark>."
         ],
         "collapsed": true
     },
     {
         "id": 5,
         "companyName": "LogMeIn",
-        "jobTitle": "Associate Software Engineer Intern",
+        "jobTitle": "Associate Software Engineering Intern",
         "startDate": "Jan 2020",
         "endDate": "Jul 2020",
         "location": "Bangalore, India",
         "responsibilities": [
-            "Designed a tool for monitoring and redirecting AWS Direct Connect traffic during AWS Health events, resulting in a reduction of time from <mark>45 minutes to 2 minutes</mark>.",
-            "Developed lambda functions to update database entries and SNS trigger for AWS Health, <mark>reducing downtime by 20%</mark> and <mark>saving $2,500</mark> in costs.",
-            "Refactored and automated the employee onboarding process, reducing duration from <mark>2 days to 30 minutes, saving $1,000 per employee</mark>, and providing managers with visibility into onboarding progress."
+            "Developed <mark>AWS Lambda</mark> functions with <mark>Python</mark> to monitor health events and send email alerts using <mark>SNS</mark>.",
+            "Designed a web app using <mark>Angular, CSS</mark> and <mark>HTML</mark> to check the status of each network interface and redirect traffic during maintenance events.",
+            "Trimmed maintenance effort from <mark>45 minutes to 2 minutes, alleviated downtime by 20%</mark> and <mark>reduced expenses of $2500 per event</mark>.",
+            "Automated the employee onboarding process using <mark>Angular</mark> and <mark>Python, reducing team leads’ billable hours</mark> from <mark>48 hours to 30 minutes</mark>."
         ],
         "collapsed": true
     }
