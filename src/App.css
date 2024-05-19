@@ -209,6 +209,10 @@ html, body {
     top: 5%;
   }
 
+  .profilepictureimg {
+    transform: scale(2.5);
+  }
+
   .introtext::before {
     padding: 10%;
     top: 80%;
